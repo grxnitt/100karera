@@ -38,7 +38,7 @@ for (const pattern of forbidden) {
   }
 }
 
-if (!css.includes('@media (max-width: 760px)')) {
+if (!/@media\s*\(max-width:\s*760px\)/.test(css)) {
   throw new Error('Missing mobile media query');
 }
 
