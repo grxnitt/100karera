@@ -1,0 +1,63 @@
+.post-card::before {
+  bottom: 64px;
+}
+
+.post-card p {
+  max-width: 58%;
+  line-height: 1.45;
+}
+
+.post-visual {
+  height: 34%;
+}
+
+.soft-chair {
+  bottom: 16px;
+}
+
+.avatar-card {
+  bottom: 12px;
+}
+
+.route-badge {
+  bottom: 20px;
+}
+
+.search-window {
+  bottom: 18px;
+}
+
+.magnifier {
+  bottom: 16px;
+}
+
+.growth-bars {
+  bottom: 16px;
+}
+
+.growth-bars i:nth-child(1) { height: 42px; }
+.growth-bars i:nth-child(2) { height: 72px; }
+.growth-bars i:nth-child(3) { height: 104px; }
+
+.event-card {
+  bottom: 14px;
+  height: 108px;
+}
+
+.event-card i {
+  top: 8px;
+}
+
+.event-card b {
+  bottom: 14px;
+}
+
+.play-dot {
+  bottom: 28px;
+}
+
+@media (max-width: 760px) {
+  .post-visual {
+    height: 34%;
+  }
+}
