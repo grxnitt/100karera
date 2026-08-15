@@ -1,3 +1,8 @@
+const posterFixes = document.createElement('link');
+posterFixes.rel = 'stylesheet';
+posterFixes.href = 'poster-fixes.css';
+document.head.appendChild(posterFixes);
+
 const year = document.querySelector('[data-year]');
 if (year) {
   year.textContent = new Date().getFullYear();
