@@ -5,7 +5,9 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const html = readFileSync(resolve(root, 'index.html'), 'utf8');
 const css = readFileSync(resolve(root, 'styles.css'), 'utf8');
-const text = `${html}\n${css}`;
+const generatedCss = readFileSync(resolve(root, 'generated-posts.css'), 'utf8');
+const script = readFileSync(resolve(root, 'script.js'), 'utf8');
+const text = `${html}\n${css}\n${generatedCss}\n${script}`;
 
 const required = [
   '100Б Карьера',
@@ -17,7 +19,10 @@ const required = [
   'Карьерный диалог',
   'Как пройти первое собеседование',
   'Где искать стажировки',
-  'Развивай навыки'
+  'Развивай навыки',
+  'assets/posts/generated/interview.webp',
+  'assets/posts/generated/quote.webp',
+  'generated-posts.css'
 ];
 
 const forbidden = [

@@ -6,16 +6,25 @@ document.head.appendChild(generatedPostStyles);
 const postGrid = document.querySelector('.post-grid');
 if (postGrid) {
   postGrid.outerHTML = `
-    <div class="generated-showcase" data-reveal>
-      <img
-        src="assets/posts/contact-showcase.svg"
-        alt="Шесть примеров Telegram-обложек 100Б Карьера: собеседование, история выпускника, стажировки, навыки, события и карьерный рост"
-      />
-      <p class="showcase-caption">
-        Примеры обложек для Telegram: «Как пройти первое собеседование», «История
-        выпускника», «Где искать стажировки», «Развивай навыки», «События и эфиры»,
-        мотивационная карточка про карьерный рост.
-      </p>
+    <div class="generated-post-grid">
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/interview.webp" alt="Сгенерированная обложка Telegram-поста: Как пройти первое собеседование" />
+      </article>
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/story.webp" alt="Сгенерированная обложка Telegram-поста: История выпускника" />
+      </article>
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/internships.webp" alt="Сгенерированная обложка Telegram-поста: Где искать стажировки" />
+      </article>
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/skills.webp" alt="Сгенерированная обложка Telegram-поста: Развивай навыки" />
+      </article>
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/events.webp" alt="Сгенерированная обложка Telegram-поста: События и эфиры" />
+      </article>
+      <article class="generated-post-card" data-reveal>
+        <img src="assets/posts/generated/quote.webp" alt="Сгенерированная мотивационная обложка Telegram-поста про карьерный рост" />
+      </article>
     </div>
   `;
 }
